@@ -9,7 +9,8 @@
 # from email import encoders
 
 
-
+# import smtplib
+import poplib
 
 
 # 输入邮件地址, 口令和POP3服务器地址:
@@ -89,8 +90,8 @@ msg_content = b'\r\n'.join(lines).decode('utf-8')
 
 # print(messages)
 # msg = Parser().parsestr(msg_content)
-msg =email.message_from_bytes(msg_content)
-print(msg)
+# msg =email.message_from_bytes(msg_content)
+print(msg_content)
 
 # 稍后解析出邮件:
 # msg = Parser().parsestr(msg_content)
